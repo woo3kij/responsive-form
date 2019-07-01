@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formularz z localStorage</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+          <div id="address">
+            <section id="person">
+              <form action="#" method="#">
+                <fieldset>
+                  <legend>Dane osobowe</legend>
+                  <label>Imię <input type="text" name="firstName"></label>
+                  <label>Nazwisko <input type="text" name="lastName"></label>
+                  <label>Ulica <input type="text" name="street"></label>
+                  <label>Miasto <input type="text" name="city"></label>
+                  <label>Kod pocztowy <input type="text" name="postalCode"></label>
+                </fieldset>
+              </form>
+            </section>
+            <section id="company">
+              <form action="#" method="#">
+                <fieldset>
+                  <legend>Dane firmy</legend>
+                  <label>Nazwa firmy <input type="text" name="companyName"></label>
+                  <label>NIP <input type="text" name="NIP"></label>
+                  <label>Ulica <input type="text" name="companyStreet"></label>
+                  <label>Miasto <input type="text" name="companyCity"></label>
+                  <label>Kod pocztowy <input type="text" name="companyPostCode"></label>
+                </fieldset>
+              </form>
+            </section>
+          </div>
+          <section id="invoice">
+            <form action="#" method="#">
+              <fieldset>
+                <legend>Dane faktury</legend>
+                <div class="subForm">
+                  <label>Kwota<input type="text" name="price"></label>
+                </div>
+                <div class="subForm" id="radios">
+                  <label>Status faktury</label><br>
+                  <input type="radio" name="status" value="issued" checked> wystawiona<br>
+                  <input type="radio" name="status" value="delivered"> doręczona<br>
+                  <input type="radio" name="status" value="paid"> opłacona<br>
+                  <input type="radio" name="status" value="late"> spóźniona
+                </div>
+              </fieldset>
+            </form>
+          </section>
+          <div id="submit">Prześlij</div>
+          <div id="time">Czas ostatniej aktualizacji: <span id="lastUpdate"></span></div>
+        </div>
+        <script src="app.js"></script>
+      </body>
+</body>
+</html>
